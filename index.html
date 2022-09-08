@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Tienda oficial de Ventronic">
+   <meta name="keywords" content="Lo nuevo, Mas valorado, Categorias Poulares">
+   <link rel="shortcut icon" href="/img/carrito.png">
+   <script src="https://kit.fontawesome.com/e94d40ea13.js" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <title>Tienda</title>
+   <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+   <header>
+      <div class="logo">
+         <img src="/img/ventronic.jpg" alt="Logo" class="logo-img">
+         <h2 class="tienda">Tienda</h2>
+      </div>
+      <nav>
+         <ul class="nav justify-content-end">
+            <li class="nav-item">
+               <a class="nav-link active text-body" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link text-body" href="#">Tienda</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link text-body" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+               <button id="boton-carrito"><i class="fa-solid fa-cart-shopping"></i><span id="contador"></span></button>
+            </li>
+         </ul>
+      </nav>
+   </header>
+
+
+
+   
+
+      <main id="contenedor-productos">
+            
+      </main>
+      <div class="modal-contenedor">
+         <div class="modal-carrito border border-dark">
+             <h3>Carrito</h3>
+             <button id="carritoCerrar">Cerrar</button>
+             <div id="carritoContenedor"></div>
+             <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+             <button id="vaciarCarro" class="btn btn-dark">Vaciar carrito</button>
+             <button id="FinalizarCompra" class="btn btn-dark ">Finalizar Compra</button>
+         </div>
+     </div>
+ </div>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+ </script>
+ <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="/js/modal.js"></script>
+   <script src="/js/main.js"></script>
+</body>
+
+</html>

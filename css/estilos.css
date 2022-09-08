@@ -1,0 +1,175 @@
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url('/img/grunge-paint-background_1409-1337.jpg');
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(151, 218, 218);
+  height: 110px;
+  align-items: center;
+  padding: 10px;
+  
+}
+
+img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+ #contenedor-productos {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+} 
+
+.productoPrecio{
+  font-weight: 500;
+}
+
+ .producto {
+  margin-bottom: 20px;
+  box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+}
+ 
+
+.logo {
+  display: flex;
+}
+
+
+.tienda{
+  list-style-type: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17pt;
+  padding-top: 30px;
+  padding-left: 130px;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+.logo-img {
+  display: flex;
+  height: 80px;
+  width: 150px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav a {
+  padding-right: 15px;
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.productoenCarrito {
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+
+}
+.productoEnCarrito:hover {
+  border-left: 5px solid royalblue;
+}
+
+ .modal-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  visibility: hidden;
+  border-radius: 10px;
+  
+ 
+}
+.modal-carrito {
+  position: relative;
+  background-color: white;
+  min-width: 600px;
+  padding: 30px;
+  margin-top: -100%;
+  transition: all .5s;
+}
+
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-carrito #carritoCerrar {
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: rgb(25, 0, 255);
+  background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.boton-eliminar {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 20px;
+}
+
+.boton-eliminar:hover {
+  cursor: pointer;
+}
+.boton-eliminar:focus {
+  outline: none;
+}
+
+
+#boton-carrito{
+  width: 50px;
+  height: 40px;
+  font-size: 18pt;
+}
+
+.productoEnCarrito {
+  border-left: 5px solid #dc3545;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+  justify-items: start;
+}
+
+@media (min-width: 768px){
+    .tienda {
+      padding-left: 450px;
+      font-size: 21pt;
+    }
+}
+
